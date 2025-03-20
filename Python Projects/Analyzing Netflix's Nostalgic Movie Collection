@@ -1,3 +1,21 @@
-This project aims to explore Netflix's catalog of 90s movies using exploratory data analysis (EDA) to uncover trends, patterns, and insights from this golden era of filmmaking.
+git init
+import pandas as pd
+import matplotlib.pyplot as plt
+netflix_df = pd.read_csv("netflix_data.csv")
+print(netflix_df)
+movies_in_90s = netflix_df[(netflix_df['release_year'] < 2000) & (netflix_df['release_year'] > 1990)]
+print(movies_in_90s)
+new_dataset1 = movies_in_90s[['duration', 'title']]
+print(new_dataset1)
+new_dataset2 = new_dataset1.sort_values(['duration','title'], ascending = [False,True])
+print(new_dataset2)
+plt.hist(new_dataset2['duration'])
+x = new_dataset2.median()
+print(x)
+duration = 108
 
-By analyzing the Netflix dataset (netflix_data.csv), we will investigate key factors such as genre distribution, top-rated films, popular directors, and release trends throughout the decade. This research will provide valuable insights for our production company, which specializes in nostalgic styles, helping us understand what made 90s movies special and how their influence continues to shape modern entertainment.
+new_dataset3 = movies_in_90s[movies_in_90s['duration'] < 90]
+print(new_dataset3)
+new_dataset4 = new_dataset3[new_dataset3['genre'] == 'Action']
+print(new_dataset4)
+short_movie_count = 7
