@@ -1,4 +1,9 @@
-git init
+git init -b main
+git add .
+git commit -m "Analyzing Netflix's Nostalgic Movie Collection"
+git push origin main
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 netflix_df = pd.read_csv("netflix_data.csv")
