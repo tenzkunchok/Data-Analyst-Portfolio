@@ -14,6 +14,8 @@ Recommendations:
 - Redesign physical office spaces and routines to reduce physical strain and improve ergonomic conditions for onsite staff.
 - Use regular employee surveys to track evolving health trends and adapt workplace policies accordingly.
 - Invest in virtual wellness programs to support remote employees struggling with isolation and mental health.
-Conclusion: In June 2025, employees working remotely were more likely to report social isolation and eye strain but had better work life 
+
+Conclusion: 
+In June 2025, employees working remotely were more likely to report social isolation and eye strain but had better work life 
 balance than those working onsite. Burnout levels were highest among onsite employees. Hybrid workers showed the most balanced scores 
 across physical and mental health metrics.
